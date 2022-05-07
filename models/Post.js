@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection.js');
-const { underscoredIf } = require('sequelize/types/utils');
+// const { underscoredIf } = require('sequelize/types/utils');
 
 class Post extends Model {}
 

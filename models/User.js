@@ -1,8 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection.js');
-const { beforeCreate, beforeUpdate } = require('./Post.js');
-
 class User extends Model {
   checkPassword(inputPassword) {
     return bcrypt.compareSync(inputPassword, this.password);

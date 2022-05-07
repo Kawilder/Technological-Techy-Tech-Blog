@@ -28,7 +28,7 @@ Comment.init(
       },
     },
     comment_content: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
       allowNull: false,
       defaultValue: 'Comment Text Placeholder.',
     },
